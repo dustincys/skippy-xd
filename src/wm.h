@@ -162,6 +162,9 @@ wm_activate_window(session_t *ps, Window wid) {
 			wm_set_desktop_ewmh(ps, tgt);
 	}
 	// Order is important, to avoid "intelligent" WMs fixing our focus stealing
+	char buf[100];
+	sprintf(buf, "FvwmCommand \"WindowId %d WarpToWindow 50 50\"", wid);
+	system(buf);
 	wm_activate_window_ewmh(ps, wid);
 	XSetInputFocus(ps->dpy, wid, RevertToParent, CurrentTime);
 }
