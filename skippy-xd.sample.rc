@@ -94,15 +94,15 @@ font = fixed-11:weight=bold
 
 [bindings]
 miwMouse1 = focus
-miwMouse2 = close-ewmh
-miwMouse3 = iconify
-keysUp = Up w
-keysDown = Down s
-keysLeft = Left b a
-keysRight = Right Tab f d
-keysExitCancelOnPress = Escape BackSpace x q
-keysExitCancelOnRelease =
+miwMouse2 = no
+miwMouse3 = no
+keysUp = k
+keysDown = j
+keysLeft = h
+keysRight = l
+keysExitCancelOnPress = Escape
+keysExitCancelOnRelease = no
 keysExitSelectOnPress = Return space
-keysExitSelectOnRelease = Super_L Super_R Alt_L Alt_R ISO_Level3_Shift
+keysExitSelectOnRelease = no
 keysReverseDirection = Tab
 modifierKeyMasksReverseDirection = ShiftMask ControlMask
